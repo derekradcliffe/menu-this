@@ -1,9 +1,10 @@
 import React from 'react';
+import "./styles/Header.css";
 
 const Header = () => {
     return (
         <header>
-            <h1>Header Component</h1>
+            <h1>menu <span className="material-symbols-outlined">restaurant</span> this</h1>
         </header>
     );
 };

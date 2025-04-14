@@ -1,10 +1,16 @@
 import React from 'react';
+import "./styles/MenuItem.css";
 
-const MenuItem = () => {
+const MenuItem = ({title, image, description}) => {
     return (
-        <header>
-            <h1>Menu Item Component</h1>
-        </header>
+        <div className="menuItemWrapper">
+            <div className="content">
+                <img src={image} alt={title} />
+                <div className="title">{title}</div>
+                <div className="copy">{description}</div>
+                <button className="order">Order</button>
+            </div>
+        </div>
     );
 };
 
