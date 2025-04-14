@@ -1,0 +1,20 @@
+.menuItemWrapper {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.menuItemWrapper .content {
+    border: 1px solid purple;
+    width: 100%;
+}
+
+.menuItemWrapper .content img {
+    max-width: 100%;
+}
+
+@media (max-width: 762px) {
+    .menuItemWrapper {
+        width: 80%;
+        margin: 1rem auto;
+    }
+}
