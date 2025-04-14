@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@200&display=swap');
+
 .menuItemWrapper {
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .menuItemWrapper .content {
-    border: 1px solid #000000;
+    border: 2px solid #000000;
     border-radius: 1rem;
     box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.67);
     overflow: hidden;
@@ -13,27 +16,54 @@
 
 .menuItemWrapper .content img {
     max-width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    object-fit: cover;
 }
 
 .menuItemWrapper .content .text {
     padding: 1rem;
     text-align: left;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    height: 9rem;
 }
 
 .menuItemWrapper .content .text .title {
     font-size: 1.5rem;
+    font-family: "Lexend Tera", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.menuItemWrapper .content .text .title::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    width: 12%;
+    margin-left: 0.2rem;
+}
+
+.menuItemWrapper .content .text .copy {
+    padding-bottom: 1.5rem;
 }
 
 .menuItemWrapper .content .text button {
     background-color: #000000;
     color: #FFFFFF;
-    border: none;
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    font-family: "Lexend Tera", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    border: 1px solid #000000;
+}
+
+.menuItemWrapper .content .text button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
 }
 
 @media (max-width: 762px) {
