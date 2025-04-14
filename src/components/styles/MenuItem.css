@@ -4,12 +4,36 @@
 }
 
 .menuItemWrapper .content {
-    border: 1px solid purple;
+    border: 1px solid #000000;
+    border-radius: 1rem;
+    box-shadow: 10px 10px 23px -11px rgba(0,0,0,0.67);
+    overflow: hidden;
     width: 100%;
 }
 
 .menuItemWrapper .content img {
     max-width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.menuItemWrapper .content .text {
+    padding: 1rem;
+    text-align: left;
+}
+
+.menuItemWrapper .content .text .title {
+    font-size: 1.5rem;
+}
+
+.menuItemWrapper .content .text button {
+    background-color: #000000;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
 }
 
 @media (max-width: 762px) {
