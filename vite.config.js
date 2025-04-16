@@ -4,7 +4,7 @@ import { resolve } from "node:path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  // base: "/menu-this",
+  base: "/menu-this",
   plugins: [viteReact()],
   test: {
     globals: true,
