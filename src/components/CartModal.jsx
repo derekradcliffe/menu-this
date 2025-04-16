@@ -15,7 +15,7 @@ const CartModal = ({ method }) => {
         return (
             // fix issue with close button not working when an item is in the cart
             <div className="cartModalWrapper">
-                <div className="close" onClick={handleClick}><img src="/menu-this/public/img/close.svg" alt="close" /></div>
+                <div className="close" onClick={handleClick}><img src="/img/close.svg" alt="close" /></div>
                 <ul>
                     {elements.map((item) => (
                         <li key={item.id}>
@@ -33,7 +33,7 @@ const CartModal = ({ method }) => {
       } else {
         return (
             <div className="cartModalWrapper">
-                <div className="close" onClick={handleClick}><img src="/menu-this/public/img/close.svg" alt="close" /></div>
+                <div className="close" onClick={handleClick}><img src="/img/close.svg" alt="close" /></div>
                 <div className="empty">Bag is empty</div>
             </div>
         );

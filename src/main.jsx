@@ -33,7 +33,7 @@ const rootRoute = createRootRoute({
 
 const indexRoute = createRoute({
   getParentRoute: () => rootRoute,
-  path: "/menu-this",
+  path: "/",
   component: App,
 });
 
