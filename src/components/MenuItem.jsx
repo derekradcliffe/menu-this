@@ -24,8 +24,8 @@ const MenuItem = ({title, image, description, id, price, quantity}) => {
                     <div className="title">{title}</div>
                     <div className="copy">${price} x{quantity} <span><b>Total: ${price*quantity}</b></span></div>
                     <div className="actions">
-                        <button className="add" onClick={increment}>+ 1</button>
-                        <button className="minus" onClick={decrement}>- 1</button>
+                        <button className="add" onClick={increment}>+</button>
+                        <button className="minus" onClick={decrement}>-</button>
                     </div>
                 </div>
             </div>
@@ -36,8 +36,8 @@ const MenuItem = ({title, image, description, id, price, quantity}) => {
                     <div className="title">{title}</div>
                     <div className="copy">{description} {price}</div>
                     <div className="actions">
-                        <button className="add" onClick={increment}>+ 1</button>
-                        <button className="minus" onClick={decrement}>- 1</button>
+                        <button onClick={increment}>Order</button>
+                        {/* <button className="minus" onClick={decrement}>- 1</button> */}
                     </div>
                 </div>
             </div>
