@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build -r https://github.com/derekradcliffe/menu-this.git",
     "start": "vite --port 3000",
     "build": "vite build && tsc",
     "serve": "vite preview",
