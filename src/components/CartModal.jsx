@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import { useDispatch, useSelector } from "react-redux";
 import MenuItem from "./MenuItem";
 import "./styles/CartModal.css";
+import close from "../../public/img/close.svg";
 
 const CartModal = ({ method }) => {
     const elements = useSelector((state) => state.reducer.itemList);
@@ -15,7 +16,7 @@ const CartModal = ({ method }) => {
         return (
             // fix issue with close button not working when an item is in the cart
             <div className="cartModalWrapper">
-                <div className="close" onClick={handleClick}><img src="/img/close.svg" alt="close" /></div>
+                <div className="close" onClick={handleClick}><img src={close} alt="close" /></div>
                 <ul>
                     {elements.map((item) => (
                         <li key={item.id}>
@@ -33,7 +34,7 @@ const CartModal = ({ method }) => {
       } else {
         return (
             <div className="cartModalWrapper">
-                <div className="close" onClick={handleClick}><img src="/img/close.svg" alt="close" /></div>
+                <div className="close" onClick={handleClick}><img src={close} alt="close" /></div>
                 <div className="empty">Bag is empty</div>
             </div>
         );
