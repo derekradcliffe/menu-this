@@ -9,6 +9,9 @@ import {
 } from "@tanstack/react-router";
 // import { TanStackRouterDevtools } from "@tanstack/react-router-devtools";
 
+//Redux
+import {Provider} from "react-redux";
+import store from "./redux/store";
 
 import "./styles.css";
 import reportWebVitals from "./reportWebVitals.js";
@@ -52,9 +55,9 @@ if (rootElement && !rootElement.innerHTML) {
   const root = ReactDOM.createRoot(rootElement);
   root.render(
     <StrictMode>
-      
+      <Provider store={store}>
         <RouterProvider router={router} />
-      
+      </Provider>
     </StrictMode>
   );
 }

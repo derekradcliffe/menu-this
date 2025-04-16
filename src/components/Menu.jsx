@@ -24,6 +24,9 @@ const Menu = () => {
                             title={item.title}
                             image={item.image}
                             description={item.description}
+                            id={item.id}
+                            price={item.price}
+                            quantity={item.quantity}
                         />
                     ))}
                 </div>

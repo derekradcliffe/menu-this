@@ -26,7 +26,7 @@
 .menuItemWrapper .content .text {
     padding: 1rem;
     text-align: left;
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: column;
     height: 9rem;
@@ -50,6 +50,7 @@
 
 .menuItemWrapper .content .text .copy {
     padding-bottom: 1.5rem;
+    justify-content: space-around;
 }
 
 .menuItemWrapper .content .text button {
@@ -76,4 +77,14 @@
         width: 80%;
         margin: 1rem auto;
     }
+}
+
+.actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.actions .add,
+.actions .minus {
+    width: 25%;
 }
