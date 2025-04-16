@@ -1,13 +1,15 @@
 {
   "name": "menu-this",
-  "private": true,
+  "version": "0.1.0",
   "homepage": "https://derekradcliffe.github.io/menu-this/",
+  "private": true,
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build -r https://github.com/derekradcliffe/menu-this.git",
+    "deploy": "gh-pages -d dist",
     "start": "vite --port 3000",
-    "build": "vite build && tsc",
+    "build": "vite build",
+    "buildOld": "vite build && tsc",
     "serve": "vite preview",
     "test": "vitest run"
   },
