@@ -1,7 +1,7 @@
 # menuThis
 
-Menu SPA 
---------------------------------------
+A single page menu app built using [create-tsrouter-app](https://www.npmjs.com/package/create-tsrouter-app). Uses tanstack, vite and React.
+-------------------------------------------------------------------------------------------------------------------------------------------
 
 Welcome to your new TanStack app! 
 

@@ -15,17 +15,21 @@ const MenuItem = ({title, image, description, id, price, quantity}) => {
         dispatch(removeFromCart({ title, id, price, quantity }));
     };
 
+    const clearItem = () => {
+        dispatch({ type: "cart/clearItem" });
+    }
+
     return (
         <div className="menuItemWrapper">
         { isHeader ? 
             <div className="content">
-                <img src={image} alt={title} />
                 <div className="text">
                     <div className="title">{title}</div>
                     <div className="copy">${price} x{quantity} <span><b>Total: ${price*quantity}</b></span></div>
                     <div className="actions">
                         <button className="add" onClick={increment}>+</button>
                         <button className="minus" onClick={decrement}>-</button>
+                        <button className="remove" onClick={clearItem}>Clear</button>
                     </div>
                 </div>
             </div>
@@ -33,11 +37,13 @@ const MenuItem = ({title, image, description, id, price, quantity}) => {
             <div className="content">
                 <img src={image} alt={title} />
                 <div className="text">
-                    <div className="title">{title}</div>
-                    <div className="copy">{description} {price}</div>
+                    <div className="titleWrapper">
+                        <div className="title">{title}</div> 
+                        <div className="price">{price}</div>
+                    </div>
+                    <div className="copy">{description}</div>
                     <div className="actions">
                         <button onClick={increment}>Order</button>
-                        {/* <button className="minus" onClick={decrement}>- 1</button> */}
                     </div>
                 </div>
             </div>

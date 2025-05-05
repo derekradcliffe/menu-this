@@ -14,7 +14,6 @@ const CartModal = ({ method }) => {
     
     if (elements.length > 0) {
         return (
-            // fix issue with close button not working when an item is in the cart
             <div className="cartModalWrapper">
                 <div className="close" onClick={handleClick}><img src={close} alt="close" /></div>
                 <ul>
